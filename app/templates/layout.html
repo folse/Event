@@ -11,8 +11,10 @@
   <div class="navbar">
 	  <div class="navbar-inner">
 		  <ul class="nav">
-			  <li><a href="{{url_for('index')}}">首页</a></li>
-			  <li><a href="{{url_for('logout')}}">退出</a></li>
+		  	 <li><a href="#">致优教育</a></li>
+		  	 <li><a href="{{url_for('coffee_event')}}">活动页面</a></li>
+			 <li><a href="{{url_for('show_guest')}}">查看数据</a></li>
+			 <li><a href="{{url_for('logout')}}">退出</a></li>
 		  </ul>
 	  </div>
 	  {% for message in get_flashed_messages()%}
