@@ -96,8 +96,9 @@ pass_ticket = encodeURIComponent(pass_ticket.html(false).html(false).replace(/\s
             <div class="control-group">
                 <label class="control-label">邀请人:</label>
                 <div class="controls">
-                    <input type="text" name="inviter" placeholder="他会有个小惊喜" autocomplete="on" value="{{temp_guest.inviter}}">
-                        </div>
+                    <input type="text" name="inviter" placeholder="他会有个小惊喜" autocomplete="on">
+                    <input type="hidden" name="source" value="{{temp_guest.source}}">
+                </div>
             </div>
             <div class="control-group">
                 <div class="controls">
